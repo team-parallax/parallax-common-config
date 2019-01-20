@@ -1,13 +1,17 @@
 {
 	"env": {
 		"amd": false,
-		"browser": false,
+		"browser": true,
 		"es6": true,
-		"node": false
+		"node": true
 	},
 	"extends": [
 		"eslint:recommended"
 	],
+	"parserOptions": {
+		"ecmaVersion": 2018,
+		"sourceType": "module"
+	},
 	"plugins": [
 		"filenames"
 	],
