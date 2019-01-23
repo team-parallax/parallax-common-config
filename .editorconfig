@@ -4,3 +4,7 @@ end_of_line = lf
 insert_final_newline = false
 charset = utf-8
 indent_style = tab
+[*.yml]
+# What a joke of a file format; tabs are considered invalid syntax, because why not.
+indent_style = space
+indent_size = 2
