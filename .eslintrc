@@ -4,7 +4,7 @@
 		"browser": true,
 		"es6": true,
 		"jest": {
-		  "globals": true
+			"globals": true
 		},
 		"node": true
 	},
@@ -17,14 +17,14 @@
 	},
 	"plugins": [
 		"filenames",
-	  	"jest"
+		"jest"
 	],
 	"rules": {
-	  "jest/no-disabled-tests": "warn",
-	  "jest/no-focused-tests": "error",
-	  "jest/no-identical-title": "error",
-	  "jest/prefer-to-have-length": "warn",
-	  "jest/valid-expect": "error",
+		"jest/no-disabled-tests": "warn",
+		"jest/no-focused-tests": "error",
+		"jest/no-identical-title": "error",
+		"jest/prefer-to-have-length": "warn",
+		"jest/valid-expect": "error",
 		"accessor-pairs": [
 			"warn"
 		],
