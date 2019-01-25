@@ -3,6 +3,9 @@
 		"amd": false,
 		"browser": true,
 		"es6": true,
+		"jest": {
+		  "globals": true
+		},
 		"node": true
 	},
 	"extends": [
@@ -13,9 +16,15 @@
 		"sourceType": "module"
 	},
 	"plugins": [
-		"filenames"
+		"filenames",
+	  	"jest"
 	],
 	"rules": {
+	  "jest/no-disabled-tests": "warn",
+	  "jest/no-focused-tests": "error",
+	  "jest/no-identical-title": "error",
+	  "jest/prefer-to-have-length": "warn",
+	  "jest/valid-expect": "error",
 		"accessor-pairs": [
 			"warn"
 		],
