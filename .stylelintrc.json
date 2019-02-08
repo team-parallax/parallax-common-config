@@ -115,7 +115,16 @@
 		"shorthand-property-no-redundant-values": true,
 		"string-no-newline": true,
 		"string-quotes": "double",
-		"unit-whitelist": ["%", "fr", "rem", "s"],
+		"unit-whitelist": [
+			"%",
+			"fr",
+			"rem",
+			"s",
+			"vh",
+			"vmax",
+			"vmin",
+			"vw"
+		],
 		"unit-case": "lower",
 		"unit-no-unknown": true,
 		"value-list-comma-space-after": "always-single-line",
