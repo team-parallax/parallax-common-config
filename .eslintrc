@@ -92,7 +92,9 @@
 				"SwitchCase": 1
 			}
 		],
-		"jsdoc/no-undefined-types": 1,
+		"jsdoc/no-undefined-types": [
+			"warn"
+		],
 		"jsx-quotes": [
 			"warn",
 			"prefer-double"
