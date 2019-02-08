@@ -14,7 +14,8 @@
 		"sourceType": "module"
 	},
 	"plugins": [
-		"filenames"
+		"filenames",
+		"jsdoc"
 	],
 	"rules": {
 		"accessor-pairs": [
@@ -91,6 +92,7 @@
 				"SwitchCase": 1
 			}
 		],
+		"jsdoc/no-undefined-types": 1,
 		"jsx-quotes": [
 			"warn",
 			"prefer-double"
