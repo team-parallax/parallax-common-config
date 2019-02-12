@@ -86,7 +86,11 @@
 		"number-max-precision": 3,
 		"number-no-trailing-zeros": true,
 		"property-case": "lower",
-		"property-no-unknown": true,
+		"property-no-unknown": [
+			true, {
+				"ignoreProperties": ["composes"]
+			}
+		],
 		"property-no-vendor-prefix": true,
 		"rule-empty-line-before": "never",
 		"selector-attribute-brackets-space-inside": "never",
