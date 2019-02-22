@@ -121,9 +121,11 @@
 		"string-quotes": "double",
 		"unit-whitelist": [
 			"%",
+			"deg",
 			"fr",
 			"rem",
 			"s",
+			"turn",
 			"vh",
 			"vmax",
 			"vmin",
