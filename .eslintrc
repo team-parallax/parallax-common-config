@@ -376,6 +376,10 @@
 		"space-unary-ops": [
 			"warn"
 		],
+		"spaced-comment": [
+			"warn",
+			"always"
+		],
 		"strict": [
 			"warn",
 			"global"
