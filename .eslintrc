@@ -366,6 +366,10 @@
 			"warn",
 			"always"
 		],
+		"space-before-function-paren": [
+			"warn",
+			"never"
+		],
 		"space-in-parens": [
 			"warn",
 			"never"
