@@ -383,7 +383,9 @@
 		"spaced-comment": [
 			"warn",
 			"always", {
-				"balanced": true
+				"block": {
+					"balanced": true
+				}
 			}
 		],
 		"strict": [
