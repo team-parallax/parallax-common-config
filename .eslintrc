@@ -339,6 +339,9 @@
 		"object-property-newline": [
 			"warn"
 		],
+		"prefer-arrow-callback": [
+			"warn"
+		],
 		"quotes": [
 			"warn",
 			"double", {
