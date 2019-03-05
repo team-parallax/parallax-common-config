@@ -378,7 +378,9 @@
 		],
 		"spaced-comment": [
 			"warn",
-			"always"
+			"always", {
+				"balanced": true
+			}
 		],
 		"strict": [
 			"warn",
