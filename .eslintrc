@@ -28,6 +28,9 @@
 		"array-callback-return": [
 			"warn"
 		],
+		"arrow-spacing": [
+			"warn"
+		],
 		"block-scoped-var": [
 			"warn"
 		],
@@ -82,6 +85,10 @@
 		"filenames/match-regex": [
 			"warn",
 			"^[a-zA-Z.]+$"
+		],
+		"function-paren-newline": [
+			"warn",
+			"consistent"
 		],
 		"guard-for-in": [
 			"warn"
@@ -332,6 +339,26 @@
 		"no-with": [
 			"warn"
 		],
+		"object-curly-newline": [
+			"warn", {
+				"ExportDeclaration": {
+					"minProperties": 3,
+					"multiline": true
+				},
+				"ImportDeclaration": {
+					"minProperties": 3,
+					"multiline": true
+				},
+				"ObjectExpression": {
+					"minProperties": 1,
+					"multiline": true
+				},
+				"ObjectPattern": {
+					"minProperties": 3,
+					"multiline": true
+				}
+			}
+		],
 		"object-curly-spacing": [
 			"warn",
 			"always"
@@ -339,8 +366,18 @@
 		"object-property-newline": [
 			"warn"
 		],
+		"object-shorthand": [
+			"warn",
+			"always", {
+			"avoidQuotes": true
+			}
+		],
 		"prefer-arrow-callback": [
 			"warn"
+		],
+		"prefer-const": [
+			"warn",
+
 		],
 		"quotes": [
 			"warn",
