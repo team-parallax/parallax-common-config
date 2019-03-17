@@ -389,15 +389,6 @@
 			"warn",
 			"as-needed"
 		],
-		"require-jsdoc": [
-			"warn", {
-				"require": {
-					"FunctionDeclaration": true,
-					"MethodDefinition": true,
-					"ClassDeclaration": true
-				}
-			}
-		],
 		"semi": [
 			"warn",
 			"always"
