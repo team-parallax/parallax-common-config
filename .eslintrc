@@ -426,25 +426,6 @@
 			"warn",
 			"global"
 		],
-		"valid-jsdoc": [
-			"warn", {
-				"prefer": {
-					"return": "return"
-				},
-				"requireReturn": false,
-				"requireParamDescription": false,
-				"requireReturnDescription": false,
-				"requireReturnType": false,
-				"preferType": {
-					"String": "string",
-					"Number": "number",
-					"Object": "object",
-					"Symbol": "symbol",
-					"Function": "function",
-					"Boolean": "boolean"
-				}
-			}
-		],
 		"yoda": [
 			"warn",
 			"never"
