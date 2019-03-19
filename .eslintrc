@@ -432,9 +432,9 @@
 					"return": "return"
 				},
 				"requireReturn": false,
-				"requireParamDescription": true,
+				"requireParamDescription": false,
 				"requireReturnDescription": false,
-				"requireReturnType": true,
+				"requireReturnType": false,
 				"preferType": {
 					"String": "string",
 					"Number": "number",
