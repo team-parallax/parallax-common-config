@@ -170,6 +170,9 @@
 		}],
 		"radix": [1, "as-needed"],
 		"semi": [1, "always"],
+		"sort-imports": [1, {
+			"ignoreCase": true
+		}],
 		"space-before-blocks": [1, "always"],
 		"space-before-function-paren": [1, {
 			"anonymous": "always",
