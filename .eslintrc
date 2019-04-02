@@ -42,6 +42,7 @@
 		"default-case": 1,
 		"dot-notation": 1,
 		"dot-location": [1, "property"],
+		"eol-last": [1, "never"],
 		"eqeqeq": 1,
 		"filenames/match-regex": [1, "^[a-zA-Z.]+$"],
 		"function-paren-newline": [1, "consistent"],
