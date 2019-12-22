@@ -1,0 +1,53 @@
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
+module.exports = {
+	module: {
+		rules: [
+			{
+				enforce: "pre",
+				exclude: /node_modules/,
+				test: /\.(ts|tsx|js)$/,
+				use: [
+					{
+						loader: "eslint-loader",
+						options: {}
+					}
+				]
+			},
+			{
+				loader: "awesome-typescript-loader",
+				test: /\.tsx?$/
+			},
+			{
+				loader: "url-loader",
+				test: /\.svg$/
+			},
+			{
+				loader: "file-loader",
+				test: /\.(jpe?g|png|gif|ttf|woff|eot|mp3)$/i
+			}
+		]
+	},
+	output: {
+		filename: "bundle.min.js",
+		path: path.join(__dirname, "/dist"),
+		publicPath: "/"
+	},
+	plugins: [
+		new webpack.EnvironmentPlugin({
+			API_COURIER_SERVER: "https://dev.courier-server.cloud.team-parallax.com/api/v1"
+		}),
+		new HtmlWebpackPlugin({
+			favicon: "./src/logo.svg",
+			template: "./src/index.html"
+		}),
+		new webpack.HotModuleReplacementPlugin()
+	],
+	resolve: {
+		alias: {
+			"~": path.resolve(__dirname, "src/")
+		},
+		extensions: [".ts", ".tsx", ".js"]
+	}
+};
