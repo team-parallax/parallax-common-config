@@ -1,21 +1,25 @@
 {
+	"parser":  "@typescript-eslint/parser",
 	"env": {
 		"amd": false,
 		"browser": true,
 		"es6": true,
-		"node": true
+		"node": true,
+		"jest": true
 	},
 	"extends": [
 		"eslint:recommended"
 	],
-	"parser": "babel-eslint",
 	"parserOptions": {
 		"ecmaVersion": 2018,
 		"sourceType": "module"
 	},
 	"plugins": [
 		"filenames",
-		"jsdoc"
+		"eslint-plugin-import-alias",
+		"jsdoc",
+		"sort-imports-es6-autofix",
+		"unused-imports"
 	],
 	"rules": {
 		"accessor-pairs": 1,
@@ -47,9 +51,22 @@
 		"filenames/match-regex": [1, "^[a-zA-Z.]+$"],
 		"function-paren-newline": [1, "consistent"],
 		"guard-for-in": 1,
+		"import-alias/import-alias": [
+			1,
+			{
+				"relativeDepth": 0,
+				"aliases": [
+					{ "alias": "~/", "matcher": "^src\/" },
+					{ "alias": "Services", "matcher": "^src\/services/" },
+					{ "alias": "Components", "matcher": "^src\/components/" },
+					{ "alias": "Model", "matcher": "^src\/model/" },
+					{ "alias": "Views", "matcher": "^src\/views/" }
+				]
+			}
+		],
 		"indent": [1, "tab", {
-				"SwitchCase": 1
-			}],
+			"SwitchCase": 1
+		}],
 		"jsdoc/no-undefined-types": 1,
 		"jsx-quotes": [1, "prefer-double"],
 		"key-spacing": [1, {
@@ -71,7 +88,11 @@
 		"no-caller": 1,
 		"no-case-declarations": 1,
 		"no-cond-assign": 1,
-		"no-console": ["off"],
+		"no-console": [1,
+			{ "allow": [
+				"warn", "error"
+			]}
+		],
 		"no-dupe-args": 1,
 		"no-dupe-keys": 1,
 		"no-duplicate-case": 1,
@@ -111,6 +132,7 @@
 		"no-octal-escape": 1,
 		"no-param-reassign": 1,
 		"no-proto": 1,
+		"no-prototype-builtins": 0,
 		"no-redeclare": [1, {
 			"builtinGlobals": true
 		}],
@@ -124,12 +146,13 @@
 		"no-this-before-super": 1,
 		"no-throw-literal": 1,
 		"no-trailing-spaces": 1,
-		"no-underscore-dangle": 1,
+		"no-underscore-dangle": 0,
 		"no-unneeded-ternary": 1,
 		"no-delete-var": 1,
 		"no-unexpected-multiline": 1,
 		"no-unmodified-loop-condition": 1,
 		"no-unreachable": 1,
+		"no-unused-vars": "off",
 		"no-unused-expressions": 1,
 		"no-useless-call": 1,
 		"no-useless-concat": 1,
@@ -171,9 +194,19 @@
 		}],
 		"radix": [1, "as-needed"],
 		"semi": [1, "always"],
-		"sort-imports": [1, {
-			"ignoreCase": true
+		"sort-imports-es6-autofix/sort-imports-es6": [1, {
+			"ignoreCase": false,
+			"ignoreMemberSort": false,
+			"memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
 		}],
+		"sort-keys": [
+			1, "asc",
+			{
+				"caseSensitive": true,
+				"natural": true,
+				"minKeys": 2
+			}
+		],
 		"space-before-blocks": [1, "always"],
 		"space-before-function-paren": [1, {
 			"anonymous": "always",
@@ -189,6 +222,8 @@
 			}
 		}],
 		"strict": [1, "global"],
+		"unused-imports/no-unused-imports-ts": 1,
+		"unused-imports/no-unused-vars-ts": 0,
 		"yoda": [1, "never"]
 	}
 }

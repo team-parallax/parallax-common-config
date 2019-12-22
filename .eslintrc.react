@@ -2,6 +2,14 @@
 	"plugins": [
 		"react"
 	],
+	"parserOptions": {
+		"ecmaFeatures":  {
+			"jsx":  true
+		}
+	},
+	"globals": {
+		"React": true
+	},
 	"rules": {
 		"react/boolean-prop-naming": 1,
 		"react/button-has-type": 1,
@@ -18,7 +26,6 @@
 		"react/no-typos": 1,
 		"react/no-string-refs": 1,
 		"react/no-this-in-sfc": 1,
-		"react/no-unescaped-entities": 1,
 		"react/no-unknown-property": 1,
 		"react/no-unsafe": 1,
 		"react/no-unused-state": 1,
