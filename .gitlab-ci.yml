@@ -10,3 +10,5 @@
   function login_docker() {
       echo -n "$DOCKER_AUTH_CONFIG" | base64 -d | docker login -u _json_key --password-stdin https://eu.gcr.io
   }
+before_script:
+  - *common
