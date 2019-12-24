@@ -1,10 +1,12 @@
-build:
-  script:
-    - apk add --no-cache py-pip
-    - pip install docker-compose
-    - cd docker && docker-compose up --abort-on-container-exit
-image: docker
-services:
-  - docker:dind
-variables:
-  GIT_SUBMODULE_STRATEGY: recursive
+.functions: &common |
+  # Functions
+  function init_helm() {
+      mkdir -p /etc/deploy
+      echo -n ${DOCKER_AUTH_CONFIG} | base64 -d > /etc/deploy/sa.json
+      gcloud auth activate-service-account --key-file /etc/deploy/sa.json --project=${GKE_PROJECT}
+      gcloud container clusters get-credentials ${GKE_CLUSTER_NAME} --zone ${GKE_ZONE} --project ${GKE_PROJECT}
+      helm init
+  }
+  function login_docker() {
+      echo -n "$DOCKER_AUTH_CONFIG" | base64 -d | docker login -u _json_key --password-stdin https://eu.gcr.io
+  }
