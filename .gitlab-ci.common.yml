@@ -19,7 +19,6 @@ build-dependency:
     - NOT_AVAILABLE=`docker manifest inspect ${IMAGE_DEPENDENCY}:${PACKAGE_MD5} > /dev/null ; echo $?`
     - >
       if [ ${NOT_AVAILABLE} == "1" ]; then
-        echo "in"
         docker build -t ${IMAGE_DEPENDENCY}:${PACKAGE_MD5} -f ./common/Dockerfile.npm-dependencies .
         docker tag ${IMAGE_DEPENDENCY}:${PACKAGE_MD5} ${IMAGE_DEPENDENCY}:latest
         docker push ${IMAGE_DEPENDENCY}:${PACKAGE_MD5}
