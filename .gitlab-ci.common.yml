@@ -1,6 +1,6 @@
 lint:
   image: node:12.2.0-alpine
-  stage: lint
+  stage: prepare
   script:
     - npm install
     - npm run lint:prod
@@ -10,7 +10,7 @@ lint:
     - merge_requests
 
 build-dependency:
-  stage: build-dependency
+  stage: prepare
   script:
     - mkdir -p ~/.docker/
     - echo "{\"experimental\":\"enabled\"}" >> ~/.docker/config.json
