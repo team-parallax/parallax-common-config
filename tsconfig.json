@@ -1,9 +1,9 @@
 {
 	"include": [
-		"**/*.svg",
-		"**/*.json",
-		"**/*.ts",
-		"**/*.tsx"
+		"../**/*.svg",
+		"../**/*.json",
+		"../**/*.ts",
+		"../**/*.tsx"
 	],
 	"compilerOptions": {
 		"experimentalDecorators": true,
@@ -26,9 +26,13 @@
 		"allowSyntheticDefaultImports": true,
 		"jsx": "react",
 		"allowJs": true,
-		"baseUrl": "./",
+		"baseUrl": "../",
 		"paths": {
-			"~/*": ["src/*"]
+			"~/*": ["src/*"],
+			"Services/*": ["src/services/*"],
+			"Components/*": ["src/components/*"],
+			"Model/*": ["src/model/*"],
+			"Views/*": ["src/views/*"]
 		}
 	}
 }
