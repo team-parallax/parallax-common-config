@@ -2,7 +2,7 @@ lint:
   image: node:12.2.0-alpine
   stage: prepare
   script:
-    - npm install
+    - yarn install --silent --frozen-lockfile
     - npm run lint:prod
   only:
     - master
