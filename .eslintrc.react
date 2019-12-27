@@ -58,7 +58,9 @@
 			"allowAllCaps": true
 		}],
 		"react/jsx-props-no-multi-spaces": 1,
-		"react/jsx-sort-props": 1,
+		"react/jsx-sort-props": [1, {
+			"ignoreCase": true
+		}],
 		"react/jsx-tag-spacing": [1, {
 			"afterOpening": "never",
 			"beforeSelfClosing": "never",
