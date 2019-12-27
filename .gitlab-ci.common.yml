@@ -1,8 +1,15 @@
+variables:
+  DOCKER_HOST: tcp://localhost:2375
+  DOCKER_TLS_CERTDIR: ""
+  GIT_SUBMODULE_STRATEGY: recursive
+services:
+  - docker:dind
+image: docker:latest
 lint:
   image: node:12.2.0-alpine
   stage: prepare
   script:
-    - yarn install --silent --frozen-lockfile
+    - yarn install --silent --frozen-lockfile --ignore-scripts
     - npm run lint:prod
   only:
     - master
