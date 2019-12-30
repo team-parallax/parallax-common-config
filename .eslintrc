@@ -1,5 +1,4 @@
 {
-	"parser":  "@typescript-eslint/parser",
 	"env": {
 		"amd": false,
 		"browser": true,
