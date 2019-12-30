@@ -193,6 +193,7 @@
 			"allowTemplateLiterals": true
 		}],
 		"radix": [1, "as-needed"],
+		"require-atomic-updates": 0,
 		"semi": [1, "always"],
 		"sort-imports-es6-autofix/sort-imports-es6": [1, {
 			"ignoreCase": false,
