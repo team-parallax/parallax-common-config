@@ -1,8 +1,8 @@
 const ExtractPlugin = require("extract-css-chunks-webpack-plugin");
 module.exports = {
 	devServer: {
-	    disableHostCheck: true,
-		historyApiFallback: true
+		historyApiFallback: true,
+		public: process.env.REVERSE_PROXY_HOST
 	},
 	mode: "development",
 	module: {
