@@ -16,10 +16,6 @@ module.exports = {
 				]
 			},
 			{
-				loader: "awesome-typescript-loader",
-				test: /\.tsx?$/
-			},
-			{
 				loader: "url-loader",
 				test: /\.svg$/
 			},

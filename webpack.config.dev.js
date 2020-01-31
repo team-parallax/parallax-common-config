@@ -8,6 +8,18 @@ module.exports = {
 	module: {
 		rules: [
 			{
+				loader: [
+					{
+						loader: "cache-loader",
+						options: {
+							cacheDirectory: "cache-loader"
+						}
+					},
+					"awesome-typescript-loader"
+				],
+				test: /\.tsx?$/
+			},
+			{
 				test: /\.(css|pcss)$/,
 				use: [
 					"style-loader",

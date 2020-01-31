@@ -4,6 +4,12 @@ module.exports = {
 	module: {
 		rules: [
 			{
+				loader: [
+					"awesome-typescript-loader"
+				],
+				test: /\.tsx?$/
+			},
+			{
 				test: /\.(css|pcss)$/,
 				use: [
 					ExtractPlugin.loader,
