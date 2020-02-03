@@ -32,7 +32,6 @@ module.exports = {
 	},
 	plugins: [
 		new webpack.EnvironmentPlugin({
-			API_COURIER_SERVER: "https://dev.courier-server.cloud.team-parallax.com/api/v1"
 		}),
 		new HtmlWebpackPlugin({
 			favicon: "./src/logo.svg",

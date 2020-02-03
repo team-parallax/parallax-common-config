@@ -1,11 +1,16 @@
 const ExtractPlugin = require("extract-css-chunks-webpack-plugin");
-module.exports = {
+module.exports = ({awesomeTypescriptLoader}) => ({
 	mode: "production",
 	module: {
 		rules: [
 			{
 				loader: [
-					"awesome-typescript-loader"
+					{
+						loader: "awesome-typescript-loader",
+						options: {
+							...(awesomeTypescriptLoader && awesomeTypescriptLoader.options)
+						}
+					}
 				],
 				test: /\.tsx?$/
 			},
@@ -36,4 +41,4 @@ module.exports = {
 			filename: "[name].[hash].css"
 		})
 	]
-};
+});

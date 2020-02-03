@@ -1,5 +1,5 @@
 const ExtractPlugin = require("extract-css-chunks-webpack-plugin");
-module.exports = {
+module.exports = ({awesomeTypescriptLoader}) => ({
 	devServer: {
 		historyApiFallback: true,
 		public: process.env.REVERSE_PROXY_HOST
@@ -15,7 +15,12 @@ module.exports = {
 							cacheDirectory: "cache-loader"
 						}
 					},
-					"awesome-typescript-loader"
+					{
+						loader: "awesome-typescript-loader",
+						options: {
+							...(awesomeTypescriptLoader && awesomeTypescriptLoader.options)
+						}
+					}
 				],
 				test: /\.tsx?$/
 			},
@@ -46,4 +51,4 @@ module.exports = {
 			filename: "[name].css"
 		})
 	]
-};
+});
