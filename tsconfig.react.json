@@ -33,7 +33,7 @@
 			"Stores/*": ["src/stores/*"],
 			"Services/*": ["src/services/*"],
 			"Components/*": ["src/components/*"],
-			"Model/*": ["src/model/*"],
+			"Models/*": ["src/models/*"],
 			"Views/*": ["src/views/*"]
 		}
 	}
