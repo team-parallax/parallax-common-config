@@ -1,0 +1,26 @@
+{
+	"author": "Marcel Michelfelder",
+	"bugs": {
+		"url": "https://github.com/team-parallax/parallax-common-config/issues"
+	},
+	"license": "MIT",
+	"name": "parallax-common-config",
+	"description": "This is a module with all parallax-common-config configurations for team-parallax.",
+	"homepage": "https://github.com/team-parallax/parallax-common-config#readme",
+	"keywords": [
+		"react",
+		"editorconfig",
+		"browserlist",
+		"jest",
+		"docker",
+		"webpack",
+		"eslint",
+		"decorator",
+		"typescript"
+	],
+	"version": "0.1.0",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/team-parallax/parallax-common-config.git"
+	}
+}

@@ -26,7 +26,7 @@
 		"allowSyntheticDefaultImports": true,
 		"jsx": "react",
 		"allowJs": true,
-		"baseUrl": "../",
+		"baseUrl": "../../",
 		"paths": {
 			"~/*": ["src/*"],
 			"Api/*": ["src/api/*"],
