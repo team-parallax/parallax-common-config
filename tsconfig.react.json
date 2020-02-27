@@ -1,15 +1,21 @@
 {
 	"include": [
-		"../**/*.svg",
-		"../**/*.json",
-		"../**/*.ts",
-		"../**/*.tsx"
+		"../../**/*.svg",
+		"../../**/*.json",
+		"../../**/*.ts",
+		"../../**/*.tsx"
 	],
 	"compilerOptions": {
 		"experimentalDecorators": true,
 		"sourceMap": true,
-		"noImplicitAny": false,
+		"noImplicitAny": true,
 		"noImplicitThis": true,
+		"noImplicitReturns": true,
+		"strictBindCallApply": true,
+		"strictFunctionTypes": true,
+		"strictNullChecks": true,
+		"strictPropertyInitialization": true,
+		"alwaysStrict": true,
 		"module": "commonjs",
 		"target": "es6",
 		"lib": [
