@@ -107,6 +107,9 @@ module.exports = (env, argv) => {
 * Change installation section to make installation more atomic.
 * Create a postcss configuration
 * Link and configure jest
-* Automate installation with a script (?)
+* Automate installation with a script (cli)
 * add husky configuration
 * add lint-staged configuration
+* add credentials check (sonar lint/git-secrets)
+* add https://github.com/dylang/npm-check
+* add commit linting (https://www.npmjs.com/package/check-commit ?)
