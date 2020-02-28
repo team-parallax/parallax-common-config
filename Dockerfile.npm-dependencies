@@ -2,6 +2,7 @@ FROM node:12.2.0-alpine
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json /app/package.json
+COPY gen /app/gen
 RUN npm install -g yarn
 COPY yarn.lock /app/yarn.lock
 RUN yarn install --silent --frozen-lockfile --ignore-scripts
