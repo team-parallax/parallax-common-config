@@ -33,6 +33,11 @@ Create a symlink to use our `.editorconfig`
 ```bash
 ln -s node_modules/parallax-common-config/.editorconfig .editorconfig
 ```
+### .gitlab-ci.common.yml
+Create a symlink to use our `.gitlab-ci.common.yml`
+```bash
+ln -s node_modules/parallax-common-config/.gitlab-ci.common.yml .gitlab-ci.common.yml
+```
 ### .browserlistrc
 Create a symlink to use our `.editorconfig`
 ```bash
