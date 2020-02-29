@@ -27,7 +27,7 @@ module.exports = {
 	},
 	output: {
 		filename: "bundle.min.js",
-		path: path.join(__dirname, "../dist"),
+		path: path.join(__dirname, "../../dist"),
 		publicPath: "/"
 	},
 	plugins: [
@@ -41,7 +41,7 @@ module.exports = {
 	],
 	resolve: {
 		alias: {
-			"~": path.resolve(__dirname, "../src/")
+			"~": path.resolve(__dirname, "../../src/")
 		},
 		extensions: [".ts", ".tsx", ".js"]
 	}
