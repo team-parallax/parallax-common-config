@@ -22,7 +22,7 @@ yarn add -D parallax-common-config
 ```
 Additional dependencies are required for eslint, webpack to run smoothly:
 ```bash
-yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser autoprefixer awesome-typescript-loader cache-loader css-loader css-modules-typescript-loader eslint-config-react-app eslint-loader eslint-plugin-filenames eslint-plugin-import-alias eslint-plugin-jsdoc eslint-plugin-react eslint-plugin-sort-imports-es6-autofix eslint-plugin-unused-imports extract-css-chunks-webpack-plugin file-loader html-webpack-plugin style-loader svg-inline-loader typescript typescript-eslint-parser typings-for-css-modules-loader url-loader webpack-merge
+yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser autoprefixer awesome-typescript-loader cache-loader css-loader css-modules-typescript-loader eslint-config-react-app eslint-loader eslint-plugin-filenames eslint-plugin-sort-keys-fix eslint-plugin-import-alias eslint-plugin-jsdoc eslint-plugin-react eslint-plugin-sort-imports-es6-autofix eslint-plugin-unused-imports extract-css-chunks-webpack-plugin file-loader html-webpack-plugin style-loader svg-inline-loader typescript typescript-eslint-parser typings-for-css-modules-loader url-loader webpack-merge
 ```
 
 

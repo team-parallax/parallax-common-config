@@ -17,6 +17,7 @@
 		"filenames",
 		"eslint-plugin-import-alias",
 		"jsdoc",
+		"sort-keys-fix",
 		"sort-imports-es6-autofix",
 		"unused-imports"
 	],
@@ -199,6 +200,7 @@
 			"ignoreMemberSort": false,
 			"memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
 		}],
+		"sort-keys-fix/sort-keys-fix": "warn",
 		"sort-keys": [
 			1, "asc",
 			{
