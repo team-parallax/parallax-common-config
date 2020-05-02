@@ -26,7 +26,7 @@
 		"allowSyntheticDefaultImports": true,
 		"suppressImplicitAnyIndexErrors": true,
 		"allowJs": true,
-		"baseUrl": "../../",
+		"baseUrl": "../../src",
 		"types": ["node", "jest"],
 		"paths": {
 			"~/*": ["*"],
