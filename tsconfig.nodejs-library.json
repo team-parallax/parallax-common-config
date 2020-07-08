@@ -19,7 +19,7 @@
 			"dom"
 		],
 		"removeComments": true,
-		"isolatedModules": true,
+		"isolatedModules": false,
 		"noEmit": false,
 		"skipLibCheck": true,
 		"esModuleInterop": true,
