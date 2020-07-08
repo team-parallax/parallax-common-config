@@ -11,7 +11,7 @@
 		"strictNullChecks": true,
 		"strictPropertyInitialization": true,
 		"alwaysStrict": true,
-		"module": "ES2020",
+		"module": "commonjs",
 		"moduleResolution": "node",
 		"target": "ES2015",
 		"lib": [
