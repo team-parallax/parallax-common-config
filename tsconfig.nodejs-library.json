@@ -11,8 +11,9 @@
 		"strictNullChecks": true,
 		"strictPropertyInitialization": true,
 		"alwaysStrict": true,
-		"module": "commonjs",
-		"target": "es6",
+		"module": "ES2020",
+		"moduleResolution": "node",
+		"target": "ES2015",
 		"lib": [
 			"dom.iterable",
 			"esnext",
