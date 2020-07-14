@@ -6,8 +6,172 @@
 	],
 	"rules": {
 		"no-empty-function": 0,
-		"@typescript-eslint/no-empty-function": 2,
 		"typescript-sort-keys/interface": 1,
-		"typescript-sort-keys/string-enum": 1
+		"typescript-sort-keys/string-enum": 1,
+		"@typescript-eslint/no-empty-function": 2,
+		"@typescript-eslint/explicit-function-return-type": 2,
+		"@typescript-eslint/unbound-method": [2],
+		"@typescript-eslint/typedef": [
+			2,
+			{
+				"variableDeclaration": false,
+				"arrayDestructuring": false,
+				"arrowParameter": false,
+				"memberVariableDeclaration": false,
+				"parameter": true,
+				"propertyDeclaration": true
+			}
+		],
+		"semi": 0,
+		"@typescript-eslint/semi": [2],
+		"@typescript-eslint/restrict-plus-operands": 2,
+		"require-await": 0,
+		"@typescript-eslint/require-await": 2,
+		"@typescript-eslint/require-array-sort-compare": 2,
+		"quotes": 0,
+		"@typescript-eslint/quotes":  [2, "double", {
+			"allowTemplateLiterals": true
+		}],
+		"@typescript-eslint/promise-function-async": 2,
+		"@typescript-eslint/prefer-string-starts-ends-with": 2,
+		"@typescript-eslint/prefer-readonly": 2,
+		"@typescript-eslint/prefer-optional-chain": 2,
+		"@typescript-eslint/prefer-nullish-coalescing": 2,
+		"@typescript-eslint/prefer-includes": 2,
+		"no-unused-expressions": 0,
+		"@typescript-eslint/no-unused-expressions": 2,
+		"@typescript-eslint/no-throw-literal": 2,
+		"@typescript-eslint/no-this-alias": 2,
+		"@typescript-eslint/no-require-imports": 2,
+		"@typescript-eslint/no-non-null-assertion": 2,
+		"@typescript-eslint/no-misused-promises": 2,
+		"@typescript-eslint/no-misused-new": 2,
+		"no-magic-numbers": 0,
+		"@typescript-eslint/no-magic-numbers": [2, {
+			"ignoreNumericLiteralTypes": true,
+			"ignoreReadonlyClassProperties": true,
+			"ignoreEnums": true
+		}],
+		"@typescript-eslint/no-implied-eval": [2],
+		"@typescript-eslint/no-for-in-array": [2],
+		"@typescript-eslint/no-floating-promises": [2],
+		"no-extra-semi": 0,
+		"@typescript-eslint/no-extra-semi": [2],
+		"no-extra-parens": 0,
+		"@typescript-eslint/no-extra-parens": [2],
+		"@typescript-eslint/no-extra-non-null-assertion": [2],
+		"@typescript-eslint/no-empty-interface": [
+			2,
+			{
+				"allowSingleExtends": false
+			}
+		],
+		"@typescript-eslint/member-ordering": [2],
+		"@typescript-eslint/member-delimiter-style": [2, {
+			"multiline": {
+				"delimiter": "comma",
+				"requireLast": false
+			},
+			"singleline": {
+				"delimiter": "comma",
+				"requireLast": false
+			}
+		}],
+		"@typescript-eslint/consistent-type-definitions": [2, "interface"],
+		"@typescript-eslint/consistent-type-assertions": [
+			2,
+			{
+				"assertionStyle": "as",
+				"objectLiteralTypeAssertions": "never"
+			}
+		],
+		"@typescript-eslint/await-thenable": 2,
+		"@typescript-eslint/ban-ts-ignore": 2,
+		"@typescript-eslint/ban-types": [
+			2,
+			{
+				"types": {
+					"Array": null,
+					"Object": "Use {} instead",
+					"String": {
+						"message": "Use string instead",
+						"fixWith": "string"
+					}
+				}
+			}
+		],
+		"brace-style": 0,
+		"@typescript-eslint/brace-style": [
+			2,
+			"stroustrup",
+			{
+				"allowSingleLine": true
+			}
+		],
+		"@typescript-eslint/naming-convention": [
+			2,
+			{
+				"selector": "default",
+				"format": [
+					"camelCase"
+				]
+			},
+			{
+				"selector": "class",
+				"format": [
+					"PascalCase"
+				]
+			},
+			{
+				"selector": "memberLike",
+				"modifiers": [
+					"private"
+				],
+				"format": [
+					"camelCase"
+				],
+				"leadingUnderscore": "allow"
+			},
+			{
+				"selector": "memberLike",
+				"format": [
+					"camelCase"
+				],
+				"leadingUnderscore": "forbid"
+			},
+			{
+				"selector": "typeAlias",
+				"format": [
+					"PascalCase"
+				],
+				"prefix": [
+					"T"
+				]
+			},
+			{
+				"selector": "typeParameter",
+				"format": [
+					"PascalCase"
+				]
+			},
+			{
+				"selector": "interface",
+				"format": [
+					"PascalCase"
+				],
+				"prefix": [
+					"I"
+				]
+			},
+			{
+				"selector": "enum",
+				"format": [
+					"PascalCase"
+				],
+				"prefix": [
+					"E"
+				]
+			}
+		]
 	}
 }
