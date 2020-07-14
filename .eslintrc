@@ -79,6 +79,13 @@
 			"after": true
 		}],
 		"linebreak-style": [1, "unix"],
+		"max-len": [1, {
+			"code": 100,
+			"ignoreUrls": true,
+			"ignoreStrings": true,
+			"ignoreTemplateLiterals": true,
+			"ignoreRegExpLiterals": true
+		}],
 		"max-statements-per-line": [1, {
 			"max": 1
 		}],
