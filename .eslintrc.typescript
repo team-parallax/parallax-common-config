@@ -10,7 +10,9 @@
 		"typescript-sort-keys/string-enum": 1,
 		"@typescript-eslint/no-empty-function": 2,
 		"@typescript-eslint/explicit-function-return-type": 2,
-		"@typescript-eslint/unbound-method": [2],
+		"@typescript-eslint/unbound-method": [
+			2
+		],
 		"@typescript-eslint/typedef": [
 			2,
 			{
@@ -23,15 +25,22 @@
 			}
 		],
 		"semi": 0,
-		"@typescript-eslint/semi": [1, "never"],
+		"@typescript-eslint/semi": [
+			1,
+			"never"
+		],
 		"@typescript-eslint/restrict-plus-operands": 2,
 		"require-await": 0,
 		"@typescript-eslint/require-await": 2,
 		"@typescript-eslint/require-array-sort-compare": 2,
 		"quotes": 0,
-		"@typescript-eslint/quotes":  [2, "double", {
-			"allowTemplateLiterals": true
-		}],
+		"@typescript-eslint/quotes": [
+			2,
+			"double",
+			{
+				"allowTemplateLiterals": true
+			}
+		],
 		"@typescript-eslint/promise-function-async": 2,
 		"@typescript-eslint/prefer-string-starts-ends-with": 2,
 		"@typescript-eslint/prefer-readonly": 2,
@@ -47,37 +56,60 @@
 		"@typescript-eslint/no-misused-promises": 2,
 		"@typescript-eslint/no-misused-new": 2,
 		"no-magic-numbers": 0,
-		"@typescript-eslint/no-magic-numbers": [2, {
-			"ignoreNumericLiteralTypes": true,
-			"ignoreReadonlyClassProperties": true,
-			"ignoreEnums": true
-		}],
-		"@typescript-eslint/no-implied-eval": [2],
-		"@typescript-eslint/no-for-in-array": [2],
-		"@typescript-eslint/no-floating-promises": [2],
+		"@typescript-eslint/no-magic-numbers": [
+			2,
+			{
+				"ignoreNumericLiteralTypes": true,
+				"ignoreReadonlyClassProperties": true,
+				"ignoreEnums": true
+			}
+		],
+		"@typescript-eslint/no-implied-eval": [
+			2
+		],
+		"@typescript-eslint/no-for-in-array": [
+			2
+		],
+		"@typescript-eslint/no-floating-promises": [
+			2
+		],
 		"no-extra-semi": 0,
-		"@typescript-eslint/no-extra-semi": [2],
+		"@typescript-eslint/no-extra-semi": [
+			2
+		],
 		"no-extra-parens": 0,
-		"@typescript-eslint/no-extra-parens": [2],
-		"@typescript-eslint/no-extra-non-null-assertion": [2],
+		"@typescript-eslint/no-extra-parens": [
+			2
+		],
+		"@typescript-eslint/no-extra-non-null-assertion": [
+			2
+		],
 		"@typescript-eslint/no-empty-interface": [
 			2,
 			{
 				"allowSingleExtends": false
 			}
 		],
-		"@typescript-eslint/member-ordering": [2],
-		"@typescript-eslint/member-delimiter-style": [2, {
-			"multiline": {
-				"delimiter": "comma",
-				"requireLast": false
-			},
-			"singleline": {
-				"delimiter": "comma",
-				"requireLast": false
+		"@typescript-eslint/member-ordering": [
+			2
+		],
+		"@typescript-eslint/member-delimiter-style": [
+			2,
+			{
+				"multiline": {
+					"delimiter": "comma",
+					"requireLast": false
+				},
+				"singleline": {
+					"delimiter": "comma",
+					"requireLast": false
+				}
 			}
-		}],
-		"@typescript-eslint/consistent-type-definitions": [2, "interface"],
+		],
+		"@typescript-eslint/consistent-type-definitions": [
+			2,
+			"interface"
+		],
 		"@typescript-eslint/consistent-type-assertions": [
 			2,
 			{
