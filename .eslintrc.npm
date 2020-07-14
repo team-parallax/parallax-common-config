@@ -1,0 +1,11 @@
+{
+	"rules": {
+		"import-alias/import-alias": [
+			1,
+			{
+				"relativeDepth": 0,
+				"aliases": []
+			}
+		]
+	}
+}
