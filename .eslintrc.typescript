@@ -1,10 +1,13 @@
 {
 	"parser": "@typescript-eslint/parser",
 	"plugins": [
-		"@typescript-eslint"
+		"@typescript-eslint",
+		"typescript-sort-keys"
 	],
 	"rules": {
-		"no-empty-function": "off",
-		"@typescript-eslint/no-empty-function": "error"
+		"no-empty-function": 0,
+		"@typescript-eslint/no-empty-function": 2,
+		"typescript-sort-keys/interface": 1,
+		"typescript-sort-keys/string-enum": 1
 	}
 }

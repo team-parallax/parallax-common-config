@@ -9,19 +9,19 @@
 	],
 	"rules": {
 		"jest/no-disabled-tests": [
-			"warn"
+			1
 		],
 		"jest/no-focused-tests": [
-			"error"
+			2
 		],
 		"jest/no-identical-title": [
-			"error"
+			2
 		],
 		"jest/prefer-to-have-length": [
-			"warn"
+			1
 		],
 		"jest/valid-expect": [
-			"error"
+			2
 		]
 	}
 }
