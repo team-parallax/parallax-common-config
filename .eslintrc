@@ -15,6 +15,7 @@
 	},
 	"plugins": [
 		"filenames",
+		"import",
 		"eslint-plugin-import-alias",
 		"jsdoc",
 		"sort-keys-fix",
@@ -84,6 +85,7 @@
 			"consistent"
 		],
 		"guard-for-in": 1,
+		"import/no-default-export": 1,
 		"import-alias/import-alias": [
 			1,
 			{
