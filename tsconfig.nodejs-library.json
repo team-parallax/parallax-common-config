@@ -3,6 +3,9 @@
 		"experimentalDecorators": true,
 		"sourceMap": false,
 		"declaration": true,
+		"declarationMap": true,
+		"downlevelIteration": true,
+		"emitDecoratorMetadata": true,
 		"noImplicitAny": true,
 		"noImplicitThis": true,
 		"noImplicitReturns": true,
@@ -13,7 +16,7 @@
 		"alwaysStrict": true,
 		"module": "commonjs",
 		"moduleResolution": "node",
-		"target": "ES5",
+		"target": "ES6",
 		"lib": [
 			"dom.iterable",
 			"esnext",
@@ -33,6 +36,7 @@
 		"types": ["node", "jest"]
 	},
 	"exclude": [
+		"index.ts",
 		"jest.config.js",
 		"dist",
 		"gen",
