@@ -189,7 +189,7 @@
 			2,
 			{
 				"assertionStyle": "as",
-				"objectLiteralTypeAssertions": "never"
+				"objectLiteralTypeAssertions": "allow-as-parameter"
 			}
 		],
 		"@typescript-eslint/await-thenable": 2,
