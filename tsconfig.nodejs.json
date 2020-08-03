@@ -34,22 +34,14 @@
 		"paths": {
 			"~/*": ["*"],
 			"Api/*": ["./api/*"],
-			"Util/*": ["./util/*"],
-			"Util": ["./util/index.ts"],
-			"Assertion": ["./util/assertion/index.ts"],
-			"Assert": ["./util/decorator/assert/index.ts"],
-			"Assert/*": ["./util/decorator/assert/*"],
-			"Logger/*": ["./util/logger/*"],
 			"Service/*": ["./service/*"],
-			"Config": ["./config/index.ts"],
+			"Config": ["./config/index.ts", "./service/config/index.ts"],
 			"Config/*": ["./config/*"],
 			"Data/*": ["./data/*"],
 			"Entity/*": ["./data/entity/*"],
 			"Repository/*": ["./data/repository/*"],
 			"Controller/*": ["./controller/*"],
-			"Components/*": ["./components/*"],
-			"Model/*": ["./model/*"],
-			"Views/*": ["./views/*"]
+			"Spec/*": ["./spec/*"]
 		}
 	}
 }
