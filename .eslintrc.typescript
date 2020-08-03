@@ -11,7 +11,10 @@
 		"@typescript-eslint/no-empty-function": 2,
 		"@typescript-eslint/explicit-function-return-type": 2,
 		"@typescript-eslint/unbound-method": [
-			2
+			2,
+			{
+				"ignoreStatic": true
+			}
 		],
 		"@typescript-eslint/typedef": [
 			2,
