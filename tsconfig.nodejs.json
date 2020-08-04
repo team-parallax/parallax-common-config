@@ -36,7 +36,7 @@
 			"Api/*": ["./api/*"],
 			"Service/*": ["./service/*"],
 			"Config": ["./config/index.ts", "./service/config/index.ts"],
-			"Config/*": ["./config/*"],
+			"Config/*": ["./config/*", "./service/config/*"],
 			"Data/*": ["./data/*"],
 			"Entity/*": ["./data/entity/*"],
 			"Repository/*": ["./data/repository/*"],
