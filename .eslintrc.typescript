@@ -101,7 +101,7 @@
 		"@typescript-eslint/no-empty-interface": [
 			2,
 			{
-				"allowSingleExtends": false
+				"allowSingleExtends": true
 			}
 		],
 		"@typescript-eslint/member-ordering": [
