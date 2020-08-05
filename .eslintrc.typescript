@@ -240,7 +240,7 @@
 				"selector": "variable",
 				"types": ["boolean"],
 				"format": [
-					"strictCamelCase"
+					"StrictPascalCase"
 				],
 				"prefix": ["is", "should", "has", "can", "did", "will"]
 			},
