@@ -245,10 +245,30 @@
 				"prefix": ["is", "should", "has", "can", "did", "will"]
 			},
 			{
+				"selector": "property",
+				"types": ["boolean"],
+				"format": [
+					"StrictPascalCase"
+				],
+				"prefix": ["is", "should", "has", "can", "did", "will"]
+			},
+			{
+				"selector": "parameterProperty",
+				"types": ["boolean"],
+				"format": [
+					"StrictPascalCase"
+				],
+				"prefix": ["is", "should", "has", "can", "did", "will"]
+			},
+			{
 				"selector": "variable",
 				"modifiers": ["const"],
-				"format": ["StrictPascalCase", "strictCamelCase"],
-				"prefix": ["C", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+				"format": ["StrictPascalCase"],
+				"prefix": ["C"],
+				"filter": {
+					"regex": "^[A-Z]",
+					"match": true
+				}
 			},
 			{
 				"selector": "class",
