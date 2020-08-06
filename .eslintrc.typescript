@@ -237,6 +237,14 @@
 				}
 			},
 			{
+				"selector": "parameter",
+				"types": ["boolean"],
+				"format": [
+					"StrictPascalCase"
+				],
+				"prefix": ["is", "should", "has", "can", "did", "will"]
+			},
+			{
 				"selector": "variable",
 				"types": ["boolean"],
 				"format": [
