@@ -207,15 +207,20 @@
 			2,
 			{
 				"types": {
-					"Array": null,
-					"Object": "Use {} instead",
-					"String": {
-						"message": "Use string instead",
-						"fixWith": "string"
+					"Array": {
+						"message": "Use literal-array `[]` instead"
 					}
-				}
+				},
+				"extendDefaults": true
 			}
 		],
+		"@typescript-eslint/no-explicit-any": [
+			2,
+			{
+				"fixToUnknown": false,
+				"ignoreRestArgs": false
+			}
+		]
 		"brace-style": 0,
 		"@typescript-eslint/brace-style": [
 			2,
