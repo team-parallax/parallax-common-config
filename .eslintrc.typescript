@@ -52,7 +52,6 @@
 		"@typescript-eslint/prefer-includes": 2,
 		"no-unused-expressions": 0,
 		"@typescript-eslint/no-unused-expressions": 2,
-		"@typescript-eslint/no-throw-literal": 2,
 		"@typescript-eslint/no-this-alias": 2,
 		"@typescript-eslint/no-require-imports": 2,
 		"@typescript-eslint/no-non-null-assertion": 2,

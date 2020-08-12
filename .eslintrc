@@ -235,7 +235,7 @@
 		"no-sequences": 1,
 		"no-sparse-arrays": 1,
 		"no-this-before-super": 1,
-		"no-throw-literal": 1,
+		"no-throw-literal": 0,
 		"no-trailing-spaces": 1,
 		"no-underscore-dangle": 0,
 		"no-unneeded-ternary": 1,
