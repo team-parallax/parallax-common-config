@@ -24,7 +24,7 @@
 		"unused-imports"
 	],
 	"rules": {
-		"accessor-pairs": 1,
+		"accessor-pairs": 0,
 		"array-bracket-spacing": [
 			1,
 			"never"
