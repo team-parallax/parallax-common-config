@@ -313,7 +313,11 @@
 				],
 				"prefix": [
 					"T"
-				]
+				],
+				"custom": {
+					"regex": "^Id[A-Z]",
+					"match": false
+				}
 			},
 			{
 				"selector": "typeParameter",
