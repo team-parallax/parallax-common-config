@@ -262,6 +262,7 @@
 				"format": [
 					"StrictPascalCase"
 				],
+				"leadingUnderscore": "allow",
 				"prefix": ["is", "should", "has", "can", "did", "will"]
 			},
 			{
