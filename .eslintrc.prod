@@ -284,7 +284,7 @@
 		"require-atomic-updates": 0,
 		"semi": [
 			2,
-			"always"
+			"never"
 		],
 		"sort-imports-es6-autofix/sort-imports-es6": [
 			2,
