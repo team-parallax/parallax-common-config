@@ -249,7 +249,12 @@
 		"no-useless-concat": 1,
 		"no-useless-escape": 1,
 		"no-var": 1,
-		"no-void": 1,
+		"no-void": [
+			1,
+			{
+				"allowAsStatement": true
+			}
+		],
 		"no-warning-comments": [
 			1,
 			{
