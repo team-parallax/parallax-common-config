@@ -34,9 +34,10 @@
 		"paths": {
 			"~/*": ["*"],
 			"Api/*": ["./api/*"],
+			"Init/*": ["./init/*"],
 			"Service/*": ["./service/*"],
-			"Config": ["./config/index.ts", "./service/config/index.ts"],
-			"Config/*": ["./config/*", "./service/config/*"],
+			"Config": ["./config/index.ts", "./service/config/index.ts", "./init/config/index.ts"],
+			"Config/*": ["./config/*", "./service/config/*", "./init/config/*"],
 			"Data/*": ["./data/*"],
 			"Entity/*": ["./data/entity/*"],
 			"Repository/*": ["./data/repository/*"],
