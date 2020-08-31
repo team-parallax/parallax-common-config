@@ -179,7 +179,7 @@
 			2,
 			{
 				"multiline": {
-					"delimiter": "comma",
+					"delimiter": "none",
 					"requireLast": false
 				},
 				"singleline": {
